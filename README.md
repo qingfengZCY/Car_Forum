@@ -1,28 +1,36 @@
-## 毕设——汽车社区
+# 车行天下-车友社区
 
 ## 快速运行
+
 1. 安装必备工具  
 JDK，Maven
 2. 克隆代码到本地  
 3. 运行命令创建数据库脚本
+
 ```sh
 mvn flyway:migrate
 ```
+
 4. 运行打包命令
+
 ```sh
 mvn package
 ```
+
 5. 运行项目
+
 ```sh
 java -jar target/community-0.0.1-SNAPSHOT.jar
 ```
+
 6. 访问项目
+
 ```
 http://localhost:8888
 ```
 
-
 ## 资料
+
 [Spring 文档](https://spring.io/guides)
 [Spring Web](https://spring.io/guides/gs/serving-web-content/)
 [es](https://elasticsearch.cn/explore)
@@ -39,6 +47,7 @@ http://localhost:8888
 [Count(*) VS Count(1)](https://mp.weixin.qq.com/s/Rwpke4BHu7Fz7KOpE2d3Lw)  
 
 ## 工具
+
 [Git](https://git-scm.com/download)
 [Visual Paradigm](https://www.visual-paradigm.com)
 [Flyway](https://flywaydb.org/getstarted/firststeps/maven)  
@@ -50,6 +59,7 @@ http://localhost:8888
 [Postman](https://chrome.google.com/webstore/detail/coohjcphdfgbiolnekdpbcijmhambjff)
 
 ## 脚本
+
 ```sql
 CREATE TABLE USER
 (
@@ -61,11 +71,13 @@ CREATE TABLE USER
     GMT_MODIFIED BIGINT
 );
 ```
+
 ```bash
 mvn flyway:migrate
 mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 ```
 
 ## 更新日志
+
 - 2020-5-1 Create Init version
 "# Car_Forum"
